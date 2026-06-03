@@ -90,23 +90,37 @@ console.log(Object.entries(tharath));
 
 ## `> github --stats TharathXW`
 
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
+<p align="center">
+  <!-- Primary: rich stats card (github-readme-stats — flaky) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
+  </picture>
+  <!-- Mirror: stats card from the rust port — usually up when vercel.app is down -->
+  <img height="170" src="https://github-readme-stats-five-rust.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats (mirror)" />
+  <!-- Streak -->
   <img height="170" src="https://streak-stats.demolab.com?user=TharathXW&theme=tokyonight&hide_border=true" alt="Streak" />
-  <br/>
+</p>
+
+<p align="center">
+  <!-- Top langs (compact) -->
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TharathXW&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top langs" />
-</div>
+  <!-- Profile details card (backup summary) -->
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TharathXW&theme=tokyonight" alt="Profile details" />
+</p>
 
-<br/>
+<p align="center">
+  <!-- Trophies via demolab mirror (more reliable than the vercel one) -->
+  <img src="https://github-profile-trophy.demolab.com/?username=TharathXW&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=6" alt="Trophies" />
+</p>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=TharathXW&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=6" alt="Trophies" />
-</div>
+<!--  CONTRIBUTION AREA GRAPH  -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=TharathXW&theme=tokyo-night&hide_border=true&area=true&area_color=38BDF8" width="100%" alt="Contribution graph"/>
+</p>
 
-<br/>
-
-<!--  CONTRIBUTION SNAKE GRAPH  -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=TharathXW&theme=tokyo-night&hide_border=true&area=true&area_color=38BDF8" width="100%" alt="Contribution graph"/>
+> 💡 Widgets render in 30s–5min after the first commit. If one shows empty or a sad-face, it's a third-party API hiccup — give it a few minutes, or hard-refresh.
 
 ---
 
