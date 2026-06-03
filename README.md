@@ -102,8 +102,8 @@ console.log(Object.entries(tharath));
 
 <p align="center">
   <!-- Self-hosted github-readme-stats on Vercel — includes private contributions via PAT env var -->
-  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api?username=TharathXW&theme=tokyonight&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github" alt="GitHub stats (private included)" />
-  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api/top-langs/?username=TharathXW&theme=tokyonight&layout=compact&hide_border=true&count_private=true&langs_count=8" alt="Top languages (private included)" />
+  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api?username=TharathXW&theme=tokyonight&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github&v=2" alt="GitHub stats (private included)" />
+  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api/top-langs/?username=TharathXW&theme=tokyonight&layout=compact&hide_border=true&count_private=true&langs_count=8&v=2" alt="Top languages (private included)" />
 </p>
 
 <br/>
