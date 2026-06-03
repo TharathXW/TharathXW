@@ -1,0 +1,65 @@
+name: Update profile stats (includes private contributions)
+
+on:
+  # Run every 6 hours so the cards stay current
+  schedule:
+    - cron: "0 */6 * * *"
+  # Also run when you edit this file
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to commit the generated SVGs back to the repo
+
+jobs:
+  stats:
+    name: Generate GitHub stats SVGs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      # ---------- Main stats card (now sees private repos via GITHUB_TOKEN) ----------
+      - name: Generate GitHub Stats + Top Languages
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          username: TharathXW
+          theme: tokyonight
+          show_icons: true
+          include_all_commits: true
+          count_private: true              # <-- the key flag
+          hide_border: true
+          stats_svg_path: stats/github-stats.svg
+          languages_svg_path: stats/top-langs.svg
+
+      # ---------- Streak card ----------
+      - name: Generate Streak Stats
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          username: TharathXW
+          theme: tokyonight
+          hide_border: true
+          path: stats/streak.svg
+
+      # ---------- Profile summary cards (the service that was already working) ----------
+      - name: Generate Profile Summary Cards
+        uses: Vigh-SigmaBergen/github-profile-summary-cards-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          username: TharathXW
+          theme: tokyonight
+          path: stats/summary
+          output: stats/summary
+
+      # ---------- Commit everything back ----------
+      - name: Commit updated SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh profile stats ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git push
+          fi
