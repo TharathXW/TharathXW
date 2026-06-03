@@ -91,36 +91,36 @@ console.log(Object.entries(tharath));
 ## `> github --stats TharathXW`
 
 <p align="center">
-  <!-- Primary: rich stats card (github-readme-stats — flaky) -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-  </picture>
-  <!-- Mirror: stats card from the rust port — usually up when vercel.app is down -->
-  <img height="170" src="https://github-readme-stats-five-rust.vercel.app/api?username=TharathXW&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats (mirror)" />
-  <!-- Streak -->
-  <img height="170" src="https://streak-stats.demolab.com?user=TharathXW&theme=tokyonight&hide_border=true" alt="Streak" />
+  <!-- Hard numbers from shields.io (always reliable) -->
+  <a href="https://github.com/TharathXW?tab=followers"><img src="https://img.shields.io/github/followers/TharathXW?style=for-the-badge&logo=github&label=Followers&color=0EA5E9" alt="followers" /></a>
+  <a href="https://github.com/TharathXW?tab=repositories"><img src="https://img.shields.io/badge/Public%20Repos-2-6366F1?style=for-the-badge&logo=github" alt="public repos" /></a>
+  <a href="https://github.com/TharathXW"><img src="https://img.shields.io/badge/Years%20on%20GitHub-0.75-22C55E?style=for-the-badge&logo=github" alt="years on github" /></a>
+  <a href="https://github.com/TharathXW"><img src="https://img.shields.io/badge/2026%20Contributions-11-38BDF8?style=for-the-badge&logo=github&logoColor=white" alt="2026 contributions" /></a>
+</p>
+
+<br/>
+
+<p align="center">
+  <!-- Rich cards: profile-summary-cards (the only service that's actually up) -->
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TharathXW&theme=tokyonight&hide_border=true" alt="Stats card" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TharathXW&theme=tokyonight&hide_border=true" alt="Profile details" />
 </p>
 
 <p align="center">
-  <!-- Top langs (compact) -->
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TharathXW&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top langs" />
-  <!-- Profile details card (backup summary) -->
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TharathXW&theme=tokyonight" alt="Profile details" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TharathXW&theme=tokyonight&hide_border=true" alt="Repos per language" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TharathXW&theme=tokyonight&hide_border=true" alt="Most commit language" />
 </p>
 
-<p align="center">
-  <!-- Trophies via demolab mirror (more reliable than the vercel one) -->
-  <img src="https://github-profile-trophy.demolab.com/?username=TharathXW&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=6" alt="Trophies" />
-</p>
+<br/>
 
-<!--  CONTRIBUTION AREA GRAPH  -->
+<!--  CONTRIBUTION AREA GRAPH (known-working service)  -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TharathXW&theme=tokyo-night&hide_border=true&area=true&area_color=38BDF8" width="100%" alt="Contribution graph"/>
 </p>
 
-> 💡 Widgets render in 30s–5min after the first commit. If one shows empty or a sad-face, it's a third-party API hiccup — give it a few minutes, or hard-refresh.
+> 💡 Hard-number badges (top row) come from shields.io and **never break**.
+> The 4 cards below come from `github-profile-summary-cards` — currently the most reliable of the stats services.
+> The area graph is a separate service. If a card shows "no data", your account just needs more public history — push 2–3 real repos and they'll fill in.
 
 ---
 
