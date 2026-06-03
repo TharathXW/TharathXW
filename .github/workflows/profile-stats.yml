@@ -1,11 +1,11 @@
 name: Update profile stats (includes private contributions)
 
 on:
-  # Run every 6 hours so the cards stay current
-  schedule:
-    - cron: "0 */6 * * *"
-  # Also run when you edit this file
-  workflow_dispatch:
+  # ⚠️  Currently DISABLED because the GitHub account has a billing lock
+  #     and Actions refuse to run. Re-enable when billing is fixed.
+  # schedule:
+  #   - cron: "0 */6 * * *"
+  workflow_dispatch:   # ← you can still trigger this manually from the Actions tab
 
 permissions:
   contents: write   # needed to commit the generated SVGs back to the repo
