@@ -106,6 +106,11 @@ console.log(Object.entries(tharath));
   <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api/top-langs/?username=TharathXW&theme=tokyonight&layout=compact&hide_border=true&count_private=true&langs_count=8&v=2" alt="Top languages (private included)" />
 </p>
 
+<p align="center">
+  <!-- Streak stats: public service, no PAT needed for public contribution counting -->
+  <img height="180" src="https://streak-stats.demolab.com?user=TharathXW&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+</p>
+
 <br/>
 
 <!--  CONTRIBUTION AREA GRAPH (known-working public service)  -->
@@ -118,6 +123,23 @@ console.log(Object.entries(tharath));
 > `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT_1` env var —
 > so the API can see your private repos and count all **3,539+ contributions**.
 > The PAT is server-side only; it never appears in the README URL.
+
+---
+
+## `> ls ~/projects`
+
+<p align="center">
+  <a href="https://github.com/TharathXW/hometube">
+    <img width="420" src="https://github-readme-stats-zeta-two-52.vercel.app/api/pin/?username=TharathXW&repo=hometube&theme=tokyonight&hide_border=true&v=2" alt="pinned: hometube" />
+  </a>
+  <a href="https://github.com/TharathXW/bruno-api">
+    <img width="420" src="https://github-readme-stats-zeta-two-52.vercel.app/api/pin/?username=TharathXW&repo=bruno-api&theme=tokyonight&hide_border=true&v=2" alt="pinned: bruno-api" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/TharathXW?tab=repositories"><img src="https://img.shields.io/badge/→%20See%20all%20public%20projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="see all" /></a>
+</p>
 
 ---
 
