@@ -106,11 +106,6 @@ console.log(Object.entries(tharath));
   <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api/top-langs/?username=TharathXW&theme=tokyonight&layout=compact&hide_border=true&count_private=true&langs_count=8&v=2" alt="Top languages (private included)" />
 </p>
 
-<p align="center">
-  <!-- Streak stats: public service, no PAT needed for public contribution counting -->
-  <img height="180" src="https://streak-stats.demolab.com?user=TharathXW&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-</p>
-
 <br/>
 
 <!--  CONTRIBUTION AREA GRAPH (known-working public service)  -->
@@ -221,6 +216,17 @@ console.log(Object.entries(tharath));
 - Vercel free tier: 100 GB bandwidth/month, unlimited projects — this widget uses ~50 MB/day
 - PAT can be revoked at any time at https://github.com/settings/tokens (the widget will revert to public-only)
 - No cron, no actions, no server — the SVG is generated on demand by a serverless function
+
+**Optional — add a streak card** (5 min, same process)
+- The public `streak-stats.demolab.com` returns a broken image for accounts with private activity.
+- To get a working streak card that counts private contributions:
+  1. Fork https://github.com/DenverCoder1/github-readme-streak-stats to `TharathXW`
+  2. Deploy the fork to Vercel with env var `PAT_1` = your fine-grained token
+  3. Add this image between the stats row and the contribution graph:
+     ```html
+     <img height="180" src="https://github-readme-streak-stats-<your-vercel-url>.vercel.app/?user=TharathXW&theme=tokyonight&hide_border=true" />
+     ```
+- Result: streak card showing your current 🔥 streak including private contributions
 
 **Optional — custom domain**
 - In Vercel project → **Settings** → **Domains** → add `stats.tharathxw.dev` (or whatever you own)
