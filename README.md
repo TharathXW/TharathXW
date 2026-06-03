@@ -115,7 +115,7 @@ console.log(Object.entries(tharath));
 
 > ✅ **Private contributions included.** The stats cards above are served by a self-hosted
 > [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) fork deployed at
-> `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT` env var —
+> `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT_1` env var —
 > so the API can see your private repos and count all **3,539+ contributions**.
 > The PAT is server-side only; it never appears in the README URL.
 
@@ -177,7 +177,7 @@ console.log(Object.entries(tharath));
 
 **Why:** The public `github-readme-stats.vercel.app` instance is rate-limited and refuses PATs, so it can only see public data. By deploying your own fork to Vercel free tier, you get private contributions counted too — no GitHub Actions, no billing issue.
 
-**Status:** ✅ **Live at** `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT` env var.
+**Status:** ✅ **Live at** `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT_1` env var.
 
 **To re-deploy or rotate the token (e.g. token expired):**
 
@@ -188,7 +188,7 @@ console.log(Object.entries(tharath));
 
 **Step 2 — Update Vercel env var (30 sec)**
 - https://vercel.com/dashboard → select the `github-readme-stats` project
-- **Settings** → **Environment Variables** → find `PAT` → edit → paste new token
+- **Settings** → **Environment Variables** → find `PAT_1` → edit → paste new token
 - Click **Save** → Vercel auto-redeploys (~30s)
 
 **Step 3 — Verify**
