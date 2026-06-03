@@ -91,43 +91,33 @@ console.log(Object.entries(tharath));
 ## `> github --stats TharathXW`
 
 <p align="center">
-  <!-- Hard numbers from shields.io (always reliable, no Actions needed) -->
+  <!-- Hard numbers from shields.io -->
   <a href="https://github.com/TharathXW?tab=followers"><img src="https://img.shields.io/github/followers/TharathXW?style=for-the-badge&logo=github&label=Followers&color=0EA5E9" alt="followers" /></a>
   <a href="https://github.com/TharathXW?tab=repositories"><img src="https://img.shields.io/badge/Public%20Repos-2-6366F1?style=for-the-badge&logo=github" alt="public repos" /></a>
   <a href="https://github.com/TharathXW"><img src="https://img.shields.io/github/stars/TharathXW?style=for-the-badge&logo=github&label=Total%20Stars&color=22C55E" alt="total stars" /></a>
-  <a href="https://github.com/TharathXW"><img src="https://img.shields.io/badge/Public%20Only-⚠-F59E0B?style=for-the-badge&logo=github&logoColor=white" alt="public-only" /></a>
+  <a href="https://github.com/TharathXW"><img src="https://img.shields.io/badge/Private%20Stats-✓-38BDF8?style=for-the-badge&logo=github&logoColor=white" alt="private stats" /></a>
 </p>
 
 <br/>
 
 <p align="center">
-  <!-- Working third-party widgets (no Actions, no PAT) -->
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TharathXW&theme=tokyonight&hide_border=true" alt="Stats card" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TharathXW&theme=tokyonight&hide_border=true" alt="Profile details" />
-</p>
-
-<p align="center">
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TharathXW&theme=tokyonight&hide_border=true" alt="Repos per language" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TharathXW&theme=tokyonight&hide_border=true" alt="Most commit language" />
+  <!-- Self-hosted github-readme-stats on Vercel — includes private contributions via PAT env var -->
+  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api?username=TharathXW&theme=tokyonight&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&rank_icon=github" alt="GitHub stats (private included)" />
+  <img height="180" src="https://github-readme-stats-zeta-two-52.vercel.app/api/top-langs/?username=TharathXW&theme=tokyonight&layout=compact&hide_border=true&count_private=true&langs_count=8" alt="Top languages (private included)" />
 </p>
 
 <br/>
 
-<!--  CONTRIBUTION AREA GRAPH (known-working service)  -->
+<!--  CONTRIBUTION AREA GRAPH (known-working public service)  -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=TharathXW&theme=tokyo-night&hide_border=true&area=true&area_color=38BDF8" width="100%" alt="Contribution graph"/>
 </p>
 
-> ⚠️ **Public repos only.** These widgets are unauthenticated, so they can only see what GitHub shows to logged-out visitors.
-> Your **3,539 private contributions** (e.g. `@MetaElevenPhnomPenh`, `hrms_api`) are not counted here.
->
-> 🔓 **To include private contributions** (one-time, 10 min):
-> 1. Create a fine-grained PAT at https://github.com/settings/tokens?type=beta (name: `profile-stats`, scope: read user/projects/metadata)
-> 2. Fork https://github.com/anuraghazra/github-readme-stats to your account
-> 3. Deploy the fork to Vercel free tier with env var `PAT` = your token
-> 4. Find-and-replace `https://github-readme-stats.vercel.app` → your Vercel URL in this README
->
-> Full walkthrough: see "🚀 Upgrade: self-host for private stats" section below.
+> ✅ **Private contributions included.** The stats cards above are served by a self-hosted
+> [`github-readme-stats`](https://github.com/anuraghazra/github-readme-stats) fork deployed at
+> `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT` env var —
+> so the API can see your private repos and count all **3,539+ contributions**.
+> The PAT is server-side only; it never appears in the README URL.
 
 ---
 
@@ -182,50 +172,28 @@ console.log(Object.entries(tharath));
 ---
 
 <details>
-<summary><b>🚀 Upgrade: self-host <code>github-readme-stats</code> for private contributions</b></summary>
+<summary><b>🚀 Self-host: <code>github-readme-stats</code> on Vercel (private stats)</b> &nbsp; _— ✅ done on 2026-06-03_</summary>
 <br/>
 
 **Why:** The public `github-readme-stats.vercel.app` instance is rate-limited and refuses PATs, so it can only see public data. By deploying your own fork to Vercel free tier, you get private contributions counted too — no GitHub Actions, no billing issue.
 
-**Step 1 — Create a fine-grained Personal Access Token (1 min)**
-- https://github.com/settings/tokens?type=beta → **Generate new token**
-- Token name: `profile-stats`
-- Resource owner: `TharathXW`
-- Repository access: **All repositories**
-- Permissions:
-  - `read` under **Account permissions** → **Users** (read user data)
-  - `read` under **Repository permissions** → **Metadata** (auto-included, read repo metadata)
-- Click **Generate token** → copy the `github_pat_...` value
+**Status:** ✅ **Live at** `github-readme-stats-zeta-two-52.vercel.app` with a fine-grained PAT in the `PAT` env var.
 
-**Step 2 — Fork the repo (30 sec)**
-- https://github.com/anuraghazra/github-readme-stats → click **Fork** → fork to `TharathXW`
+**To re-deploy or rotate the token (e.g. token expired):**
 
-**Step 3 — Deploy to Vercel free tier (3 min)**
-- https://vercel.com → **Sign up with GitHub**
-- **Add New Project** → **Import** `TharathXW/github-readme-stats`
-- Before clicking Deploy, expand **Environment Variables**:
-  - Name: `PAT`
-  - Value: paste your token from Step 1
-- Click **Deploy**
-- Wait ~60s. Vercel assigns a URL like:
+**Step 1 — Rotate the fine-grained PAT (1 min)**
+- https://github.com/settings/tokens?type=beta
+- Find `profile-stats` token → **Regenerate** (or delete and re-create)
+- Copy the new `github_pat_...` value
 
-  ```
-  https://github-readme-stats-<hash>-<your-vercel-alias>.vercel.app
-  ```
+**Step 2 — Update Vercel env var (30 sec)**
+- https://vercel.com/dashboard → select the `github-readme-stats` project
+- **Settings** → **Environment Variables** → find `PAT` → edit → paste new token
+- Click **Save** → Vercel auto-redeploys (~30s)
 
-  Copy that URL — this is your **`VERCEL_URL`**.
-
-**Step 4 — Swap the URL in this README (1 min)**
-- In `README.md`, find:
-  ```
-  https://github-readme-stats.vercel.app
-  ```
-- Replace **all occurrences** with your `VERCEL_URL`
-- Commit & push
-
-**Step 5 — Verify**
+**Step 3 — Verify**
 - Visit your profile: https://github.com/TharathXW
-- The stats card should now show all 3,539 contributions, including the private ones from `@MetaElevenPhnomPenh` and `hrms_api`
+- Stats should refresh within ~60s with the new token's data
 
 **Cost & maintenance**
 - Vercel free tier: 100 GB bandwidth/month, unlimited projects — this widget uses ~50 MB/day
